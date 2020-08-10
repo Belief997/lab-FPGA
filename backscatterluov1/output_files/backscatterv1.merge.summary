@@ -1,0 +1,16 @@
+Partition Merge Status : Successful - Sat Jul 20 10:59:59 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : backscatterv1
+Top-level Entity Name : backscatterv1
+Family : MAX 10
+Total logic elements : 732
+    Total combinational functions : 543
+    Dedicated logic registers : 526
+Total registers : 526
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

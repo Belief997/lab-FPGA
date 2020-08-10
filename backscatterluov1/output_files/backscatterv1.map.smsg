@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at process.v(31): always construct contains both blocking and non-blocking assignments File: E:/LAB/fileRec/backscatterluov1/process.v Line: 31
+Warning (10268): Verilog HDL information at keys.v(40): always construct contains both blocking and non-blocking assignments File: E:/LAB/fileRec/backscatterluov1/keys.v Line: 40

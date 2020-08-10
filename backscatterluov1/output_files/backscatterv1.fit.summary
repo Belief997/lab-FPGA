@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri Jul 31 18:09:20 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : backscatterv1
+Top-level Entity Name : backscatterv1
+Family : MAX 10
+Device : 10M02SCM153I7G
+Timing Models : Final
+Total logic elements : 766 / 2,304 ( 33 % )
+    Total combinational functions : 594 / 2,304 ( 26 % )
+    Dedicated logic registers : 543 / 2,304 ( 24 % )
+Total registers : 543
+Total pins : 9 / 112 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 110,592 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0
