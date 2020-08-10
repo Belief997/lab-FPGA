@@ -10,32 +10,23 @@ module backscatterv1 (
 		  input key0;
 		  output led0;
 		  
-		  wire[1:0] temp1;
-		  wire[1:0] temp2;
-		  wire[1:0] temp3;
+		  wire[1:0] clk0; // 12	M
+		  wire[1:0] clk1; // 100 M
+//		  wire[1:0] clk2;
 		  
 		  
 
      ppl m1(.inclk0(clk),
-				.c0(temp1),
-				.c1(temp2),
-				.c2(temp3)
+				.c0(clk0),
+				.c1(clk1)
+//				.c2(clk2)
 				);
 				
 				
-		process the_process(.clk(clk),
-		.rst_n(rst_n),
-		.clk_40(temp2),
-		.clk_1000(temp1),
-		.clk_80(temp3),
-		.ctrl1(clkout1),
-		.ctrl2(clkout2),
-		.ctrl3(clkout3),
-		.ctrl4(clkout4),
-		.clkp(clkp),
-		.key0(key0),
-		.led0(led0)
-		);
-        
+		
+process the_proc(
+	 .clk(clk1), .rst_n(rst_n), 
+	 .sig(clkout1), .ctrl1(clkout2), .pwm(clkout3)
+);    
 
 endmodule

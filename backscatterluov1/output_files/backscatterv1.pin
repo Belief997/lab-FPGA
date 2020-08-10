@@ -198,8 +198,8 @@ RESERVED_INPUT               : N14       :        :                   :         
 led0                         : N15       : output : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT               : P1        :        :                   :         : 2         :                
 RESERVED_INPUT               : P2        :        :                   :         : 2         :                
-clkout2                      : P3        : output : 3.3-V LVTTL       :         : 3         : Y              
-RESERVED_INPUT               : P4        :        :                   :         : 3         :                
+RESERVED_INPUT               : P3        :        :                   :         : 3         :                
+clkout2                      : P4        : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : P5        : power  :                   : 3.3V    : 3         :                
 RESERVED_INPUT               : P6        :        :                   :         : 3         :                
 RESERVED_INPUT               : P7        :        :                   :         : 3         :                

@@ -1,2 +1,1 @@
-Warning (10268): Verilog HDL information at process.v(31): always construct contains both blocking and non-blocking assignments File: E:/LAB/fileRec/backscatterluov1/process.v Line: 31
-Warning (10268): Verilog HDL information at keys.v(40): always construct contains both blocking and non-blocking assignments File: E:/LAB/fileRec/backscatterluov1/keys.v Line: 40
+Info (10281): Verilog HDL Declaration information at process.v(13): object "DATA" differs only in case from object "data" in the same scope File: E:/Project/FPGA/lab-FPGA/backscatterluov1/process.v Line: 13

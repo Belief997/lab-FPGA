@@ -67,7 +67,7 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_location_assignment PIN_J5 -to clk
 set_location_assignment PIN_J9 -to rst_n
 set_location_assignment PIN_M4 -to clkout1
-set_location_assignment PIN_P3 -to clkout2
+set_location_assignment PIN_P4 -to clkout2
 set_location_assignment PIN_L6 -to clkp
 set_location_assignment PIN_M5 -to clkout3
 set_global_assignment -name ENABLE_SIGNALTAP ON

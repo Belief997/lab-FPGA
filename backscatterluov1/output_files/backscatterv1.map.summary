@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Jul 31 18:09:11 2020
+Analysis & Synthesis Status : Successful - Mon Aug 10 16:19:35 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : backscatterv1
 Top-level Entity Name : backscatterv1
 Family : MAX 10
-Total logic elements : 783
-    Total combinational functions : 591
-    Dedicated logic registers : 543
-Total registers : 543
+Total logic elements : 782
+    Total combinational functions : 585
+    Dedicated logic registers : 569
+Total registers : 569
 Total pins : 9
 Total virtual pins : 0
 Total memory bits : 8,192

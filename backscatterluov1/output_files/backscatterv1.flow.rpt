@@ -1,5 +1,5 @@
 Flow report for backscatterv1
-Fri Jul 31 18:09:36 2020
+Mon Aug 10 16:20:18 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Jul 31 18:09:36 2020       ;
+; Flow Status                        ; Successful - Mon Aug 10 16:20:18 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; backscatterv1                               ;
 ; Top-level Entity Name              ; backscatterv1                               ;
@@ -49,9 +49,9 @@ https://fpgasoftware.intel.com/eula.
 ; Device                             ; 10M02SCM153I7G                              ;
 ; Timing Models                      ; Final                                       ;
 ; Total logic elements               ; 766 / 2,304 ( 33 % )                        ;
-;     Total combinational functions  ; 594 / 2,304 ( 26 % )                        ;
-;     Dedicated logic registers      ; 543 / 2,304 ( 24 % )                        ;
-; Total registers                    ; 543                                         ;
+;     Total combinational functions  ; 588 / 2,304 ( 26 % )                        ;
+;     Dedicated logic registers      ; 569 / 2,304 ( 25 % )                        ;
+; Total registers                    ; 569                                         ;
 ; Total pins                         ; 9 / 112 ( 8 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192 / 110,592 ( 7 % )                     ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/31/2020 18:08:27 ;
+; Start date & time ; 08/10/2020 16:18:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; backscatterv1       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                     ; Value                                                    ; Default Value ; Entity Name ; Section Id       ;
 +-------------------------------------+----------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 27332940096592.159619010716680                           ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID               ; 27332940096592.159704752913624                           ; --            ; --          ; --               ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                              ; --            ; --          ; eda_simulation   ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                                       ; <None>        ; --          ; --               ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                     ; --            ; --          ; eda_simulation   ;
@@ -138,13 +138,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 4848 MB             ; 00:00:58                           ;
-; Fitter               ; 00:00:08     ; 1.2                     ; 5555 MB             ; 00:00:09                           ;
+; Analysis & Synthesis ; 00:00:46     ; 1.0                     ; 4846 MB             ; 00:00:56                           ;
+; Fitter               ; 00:00:08     ; 1.2                     ; 5565 MB             ; 00:00:09                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 4687 MB             ; 00:00:02                           ;
-; Power Analyzer       ; 00:00:03     ; 1.4                     ; 4822 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.4                     ; 4783 MB             ; 00:00:03                           ;
+; Power Analyzer       ; 00:00:08     ; 1.1                     ; 4824 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.1                     ; 4783 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4659 MB             ; 00:00:03                           ;
-; Total                ; 00:01:02     ; --                      ; --                  ; 00:01:18                           ;
+; Total                ; 00:01:14     ; --                      ; --                  ; 00:01:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

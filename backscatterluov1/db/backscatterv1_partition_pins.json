@@ -16,19 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clkout4",
-					"strict" : false
-				},
-				{
-					"name" : "led0",
-					"strict" : false
-				},
-				{
 					"name" : "rst_n",
-					"strict" : false
-				},
-				{
-					"name" : "key0",
 					"strict" : false
 				},
 				{
