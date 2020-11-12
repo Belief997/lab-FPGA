@@ -7,11 +7,11 @@ Slack : 78.574
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 511997.774
+Slack : 511997.771
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 1.043
+Slack : 1.040
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'the_pll|altpll_component|auto_generated|pll1|clk[0]'
@@ -27,7 +27,7 @@ Slack : 42.007
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 255999.319
+Slack : 255999.311
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'the_pll|altpll_component|auto_generated|pll1|clk[0]'
@@ -35,11 +35,11 @@ Slack : 78.671
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 511997.773
+Slack : 511997.770
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.925
+Slack : 0.922
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'the_pll|altpll_component|auto_generated|pll1|clk[0]'
@@ -55,7 +55,7 @@ Slack : 41.941
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 255999.252
+Slack : 255999.244
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'the_pll|altpll_component|auto_generated|pll1|clk[0]'
@@ -63,11 +63,11 @@ Slack : 81.526
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 511997.940
+Slack : 511997.939
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 0.534
+Slack : 0.533
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'the_pll|altpll_component|auto_generated|pll1|clk[0]'
@@ -83,7 +83,7 @@ Slack : 41.790
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'the_pll|altpll_component|auto_generated|pll1|clk[2]'
-Slack : 255999.099
+Slack : 255999.098
 TNS   : 0.000
 
 ------------------------------------------------------------

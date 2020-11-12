@@ -1,5 +1,5 @@
 Fitter report for backscatter
-Fri Nov 06 20:38:54 2020
+Thu Nov 12 22:24:55 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 06 20:38:54 2020       ;
+; Fitter Status                      ; Successful - Thu Nov 12 22:24:55 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; backscatter                                 ;
 ; Top-level Entity Name              ; top                                         ;
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 52 / 2,304 ( 2 % )                          ;
 ;     Dedicated logic registers      ; 27 / 2,304 ( 1 % )                          ;
 ; Total registers                    ; 27                                          ;
-; Total pins                         ; 6 / 112 ( 5 % )                             ;
+; Total pins                         ; 8 / 112 ( 7 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 110,592 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 32 ( 0 % )                              ;
@@ -155,13 +155,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processors 3-4         ;   0.6%      ;
+;     Processors 2-4         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -171,8 +170,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 110 ) ; 0.00 % ( 0 / 110 )         ; 0.00 % ( 0 / 110 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 110 ) ; 0.00 % ( 0 / 110 )         ; 0.00 % ( 0 / 110 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 114 ) ; 0.00 % ( 0 / 114 )         ; 0.00 % ( 0 / 114 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 114 ) ; 0.00 % ( 0 / 114 )         ; 0.00 % ( 0 / 114 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -195,7 +194,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 92 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 96 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 18 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -203,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/backscatter.pin.
+The pin-out file can be found in D:/Project/lab-FPGA/Quartus/backscatter/output_files/backscatter.pin.
 
 
 +--------------------------------------------------------------------+
@@ -232,7 +231,7 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 ;                                             ;                      ;
 ; Total LABs:  partially or completely used   ; 8 / 144 ( 6 % )      ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 6 / 112 ( 5 % )      ;
+; I/O pins                                    ; 8 / 112 ( 7 % )      ;
 ;     -- Clock pins                           ; 1 / 4 ( 25 % )       ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )      ;
 ;                                             ;                      ;
@@ -252,8 +251,8 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 ; Peak interconnect usage (total/H/V)         ; 1.0% / 0.9% / 1.1%   ;
 ; Maximum fan-out                             ; 27                   ;
 ; Highest non-global fan-out                  ; 27                   ;
-; Total fan-out                               ; 231                  ;
-; Average fan-out                             ; 2.10                 ;
+; Total fan-out                               ; 235                  ;
+; Average fan-out                             ; 2.06                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -288,7 +287,7 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 ; Total LABs:  partially or completely used   ; 8 / 144 ( 6 % )   ; 0 / 144 ( 0 % )                ;
 ;                                             ;                   ;                                ;
 ; Virtual pins                                ; 0                 ; 0                              ;
-; I/O pins                                    ; 6                 ; 0                              ;
+; I/O pins                                    ; 8                 ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 32 ( 0 % )    ; 0 / 32 ( 0 % )                 ;
 ; Total memory bits                           ; 0                 ; 0                              ;
 ; Total RAM block bits                        ; 0                 ; 0                              ;
@@ -297,22 +296,22 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 ; User Flash Memory                           ; 1 / 1 ( 100 % )   ; 0 / 1 ( 0 % )                  ;
 ;                                             ;                   ;                                ;
 ; Connections                                 ;                   ;                                ;
-;     -- Input Connections                    ; 28                ; 1                              ;
+;     -- Input Connections                    ; 29                ; 1                              ;
 ;     -- Registered Input Connections         ; 27                ; 0                              ;
-;     -- Output Connections                   ; 1                 ; 28                             ;
+;     -- Output Connections                   ; 1                 ; 29                             ;
 ;     -- Registered Output Connections        ; 0                 ; 0                              ;
 ;                                             ;                   ;                                ;
 ; Internal Connections                        ;                   ;                                ;
-;     -- Total Connections                    ; 220               ; 40                             ;
-;     -- Registered Connections               ; 100               ; 0                              ;
+;     -- Total Connections                    ; 224               ; 41                             ;
+;     -- Registered Connections               ; 101               ; 0                              ;
 ;                                             ;                   ;                                ;
 ; External Connections                        ;                   ;                                ;
-;     -- Top                                  ; 0                 ; 29                             ;
-;     -- hard_block:auto_generated_inst       ; 29                ; 0                              ;
+;     -- Top                                  ; 0                 ; 30                             ;
+;     -- hard_block:auto_generated_inst       ; 30                ; 0                              ;
 ;                                             ;                   ;                                ;
 ; Partition Interface                         ;                   ;                                ;
 ;     -- Input Ports                          ; 2                 ; 1                              ;
-;     -- Output Ports                         ; 4                 ; 3                              ;
+;     -- Output Ports                         ; 6                 ; 3                              ;
 ;     -- Bidir Ports                          ; 0                 ; 0                              ;
 ;                                             ;                   ;                                ;
 ; Registered Ports                            ;                   ;                                ;
@@ -341,16 +340,18 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-+------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
-+------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; CW_1 ; R14   ; 3        ; 11           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; CW_2 ; P15   ; 3        ; 11           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; led1 ; K11   ; 5        ; 18           ; 2            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; led2 ; N15   ; 5        ; 18           ; 1            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-+------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
++-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; CW_1  ; R14   ; 3        ; 11           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; CW_11 ; P15   ; 3        ; 11           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; CW_2  ; R11   ; 3        ; 9            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; CW_21 ; P12   ; 3        ; 9            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; led1  ; K11   ; 5        ; 18           ; 2            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; led2  ; N15   ; 5        ; 18           ; 1            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVTTL  ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
++-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -376,7 +377,7 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 ; 1A       ; 0 / 8 ( 0 % )   ; 3.0V          ; --           ;
 ; 1B       ; 4 / 10 ( 40 % ) ; 3.0V          ; --           ;
 ; 2        ; 1 / 10 ( 10 % ) ; 3.0V          ; --           ;
-; 3        ; 2 / 28 ( 7 % )  ; 3.0V          ; --           ;
+; 3        ; 4 / 28 ( 14 % ) ; 3.0V          ; --           ;
 ; 5        ; 3 / 12 ( 25 % ) ; 3.0V          ; --           ;
 ; 6        ; 0 / 16 ( 0 % )  ; 3.0V          ; --           ;
 ; 8        ; 3 / 28 ( 11 % ) ; 3.0V          ; --           ;
@@ -527,17 +528,17 @@ The pin-out file can be found in D:/Project/Quartus/backscatter/output_files/bac
 ; P9       ; 57         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; P10      ;            ; 3        ; VCCIO3                                         ; power  ;              ; 3.0V      ; --         ;                 ; --       ; --           ;
 ; P11      ;            ; 3        ; VCCIO3                                         ; power  ;              ; 3.0V      ; --         ;                 ; --       ; --           ;
-; P12      ; 63         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; P12      ; 63         ; 3        ; CW_21                                          ; output ; 3.0-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
 ; P13      ;            ; --       ; VCCA4                                          ; power  ;              ; 3.0V/3.3V ; --         ;                 ; --       ; --           ;
 ; P14      ; 74         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; P15      ; 66         ; 3        ; CW_2                                           ; output ; 3.0-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; P15      ; 66         ; 3        ; CW_11                                          ; output ; 3.0-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
 ; R1       ;            ;          ; GND                                            ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; R2       ; 39         ; 2        ; RESERVED_INPUT                                 ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; R3       ; 47         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; R5       ; 51         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; R7       ; 53         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; R9       ; 59         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; R11      ; 61         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; --       ; --           ;
+; R11      ; 61         ; 3        ; CW_2                                           ; output ; 3.0-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
 ; R13      ; 76         ; 3        ; RESERVED_INPUT                                 ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; R14      ; 64         ; 3        ; CW_1                                           ; output ; 3.0-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
 ; R15      ;            ;          ; GND                                            ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
@@ -608,6 +609,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; led2     ; Missing drive strength and slew rate ;
 ; CW_1     ; Missing drive strength and slew rate ;
 ; CW_2     ; Missing drive strength and slew rate ;
+; CW_11    ; Missing drive strength and slew rate ;
+; CW_21    ; Missing drive strength and slew rate ;
 +----------+--------------------------------------+
 
 
@@ -616,7 +619,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node           ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                ; Entity Name ; Library Name ;
 +--------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------+-------------+--------------+
-; |top                                 ; 52 (52)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 6    ; 0            ; 25 (25)      ; 0 (0)             ; 27 (27)          ; 0          ; |top                                                               ; top         ; work         ;
+; |top                                 ; 52 (52)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 8    ; 0            ; 25 (25)      ; 0 (0)             ; 27 (27)          ; 0          ; |top                                                               ; top         ; work         ;
 ;    |pll:the_pll|                     ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |top|pll:the_pll                                                   ; pll         ; work         ;
 ;       |altpll:altpll_component|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |top|pll:the_pll|altpll:altpll_component                           ; altpll      ; work         ;
 ;          |pll_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |top|pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated ; pll_altpll  ; work         ;
@@ -633,7 +636,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led2     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; CW_1     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; CW_2     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; rst_n_in ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; CW_11    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CW_21    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; rst_n_in ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
 ; clk_in   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -644,33 +649,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; rst_n_in            ;                   ;         ;
-;      - clk_div      ; 0                 ; 6       ;
-;      - cnt[7]       ; 0                 ; 6       ;
-;      - cnt[8]       ; 0                 ; 6       ;
-;      - cnt[9]       ; 0                 ; 6       ;
-;      - cnt[10]      ; 0                 ; 6       ;
-;      - cnt[11]      ; 0                 ; 6       ;
-;      - cnt[12]      ; 0                 ; 6       ;
-;      - cnt[13]      ; 0                 ; 6       ;
-;      - cnt[14]      ; 0                 ; 6       ;
-;      - cnt[15]      ; 0                 ; 6       ;
-;      - cnt[16]      ; 0                 ; 6       ;
-;      - cnt[17]      ; 0                 ; 6       ;
-;      - cnt[18]      ; 0                 ; 6       ;
-;      - cnt[19]      ; 0                 ; 6       ;
-;      - cnt[20]      ; 0                 ; 6       ;
-;      - cnt[21]      ; 0                 ; 6       ;
-;      - cnt[22]      ; 0                 ; 6       ;
-;      - cnt[23]      ; 0                 ; 6       ;
-;      - cnt[24]      ; 0                 ; 6       ;
-;      - CW_2~reg0    ; 0                 ; 6       ;
-;      - cnt[6]       ; 0                 ; 6       ;
-;      - cnt[5]       ; 0                 ; 6       ;
-;      - cnt[4]       ; 0                 ; 6       ;
-;      - cnt[3]       ; 0                 ; 6       ;
-;      - cnt[2]       ; 0                 ; 6       ;
-;      - cnt[1]       ; 0                 ; 6       ;
-;      - cnt[0]       ; 0                 ; 6       ;
+;      - clk_div      ; 1                 ; 6       ;
+;      - cnt[7]       ; 1                 ; 6       ;
+;      - cnt[8]       ; 1                 ; 6       ;
+;      - cnt[9]       ; 1                 ; 6       ;
+;      - cnt[10]      ; 1                 ; 6       ;
+;      - cnt[11]      ; 1                 ; 6       ;
+;      - cnt[12]      ; 1                 ; 6       ;
+;      - cnt[13]      ; 1                 ; 6       ;
+;      - cnt[14]      ; 1                 ; 6       ;
+;      - cnt[15]      ; 1                 ; 6       ;
+;      - cnt[16]      ; 1                 ; 6       ;
+;      - cnt[17]      ; 1                 ; 6       ;
+;      - cnt[18]      ; 1                 ; 6       ;
+;      - cnt[19]      ; 1                 ; 6       ;
+;      - cnt[20]      ; 1                 ; 6       ;
+;      - cnt[21]      ; 1                 ; 6       ;
+;      - cnt[22]      ; 1                 ; 6       ;
+;      - cnt[23]      ; 1                 ; 6       ;
+;      - cnt[24]      ; 1                 ; 6       ;
+;      - CW_2~reg0    ; 1                 ; 6       ;
+;      - cnt[6]       ; 1                 ; 6       ;
+;      - cnt[5]       ; 1                 ; 6       ;
+;      - cnt[4]       ; 1                 ; 6       ;
+;      - cnt[3]       ; 1                 ; 6       ;
+;      - cnt[2]       ; 1                 ; 6       ;
+;      - cnt[1]       ; 1                 ; 6       ;
+;      - cnt[0]       ; 1                 ; 6       ;
 ; clk_in              ;                   ;         ;
 +---------------------+-------------------+---------+
 
@@ -693,7 +698,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                           ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 26      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-; pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1    ; 1       ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1    ; 2       ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
 ; pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] ; PLL_1    ; 1       ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +--------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -703,14 +708,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 52 / 9,335 ( < 1 % )  ;
+; Block interconnects   ; 53 / 9,335 ( < 1 % )  ;
 ; C16 interconnects     ; 0 / 576 ( 0 % )       ;
-; C4 interconnects      ; 28 / 8,640 ( < 1 % )  ;
+; C4 interconnects      ; 29 / 8,640 ( < 1 % )  ;
 ; Direct links          ; 8 / 9,335 ( < 1 % )   ;
 ; Global clocks         ; 3 / 10 ( 30 % )       ;
 ; Local interconnects   ; 36 / 2,304 ( 2 % )    ;
-; R24 interconnects     ; 1 / 672 ( < 1 % )     ;
-; R4 interconnects      ; 28 / 11,968 ( < 1 % ) ;
+; R24 interconnects     ; 0 / 672 ( 0 % )       ;
+; R4 interconnects      ; 29 / 11,968 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
@@ -892,14 +897,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 6         ; 0            ; 6         ; 0            ; 0            ; 6         ; 6         ; 0            ; 6         ; 6         ; 0            ; 4            ; 0            ; 0            ; 2            ; 0            ; 4            ; 2            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 6         ; 0            ; 0            ;
+; Total Pass         ; 8         ; 0            ; 8         ; 0            ; 0            ; 8         ; 8         ; 0            ; 8         ; 8         ; 0            ; 6            ; 0            ; 0            ; 2            ; 0            ; 6            ; 2            ; 0            ; 0            ; 0            ; 6            ; 0            ; 0            ; 0            ; 0            ; 0            ; 8         ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 6            ; 0         ; 6            ; 6            ; 0         ; 0         ; 6            ; 0         ; 0         ; 6            ; 2            ; 6            ; 6            ; 4            ; 6            ; 2            ; 4            ; 6            ; 6            ; 6            ; 2            ; 6            ; 6            ; 6            ; 6            ; 6            ; 0         ; 6            ; 6            ;
+; Total Inapplicable ; 0         ; 8            ; 0         ; 8            ; 8            ; 0         ; 0         ; 8            ; 0         ; 0         ; 8            ; 2            ; 8            ; 8            ; 6            ; 8            ; 2            ; 6            ; 8            ; 8            ; 8            ; 2            ; 8            ; 8            ; 8            ; 8            ; 8            ; 0         ; 8            ; 8            ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; led1               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; led2               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CW_1               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CW_2               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; CW_11              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; CW_21              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; rst_n_in           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk_in             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -950,10 +957,10 @@ Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors
 Info (119006): Selected device 10M02SCM153C8G for design "backscatter"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (15535): Implemented PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as MAX 10 PLL type File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 46
-    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 46
-    Info (15099): Implementing clock multiplication of 1, clock division of 6144, and phase shift of 0 degrees (0 ps) for pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] port File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 46
-    Info (15099): Implementing clock multiplication of 1, clock division of 6144, and phase shift of 0 degrees (0 ps) for pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] port File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 46
+Info (15535): Implemented PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" as MAX 10 PLL type File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 1, clock division of 6144, and phase shift of 0 degrees (0 ps) for pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] port File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 1, clock division of 6144, and phase shift of 0 degrees (0 ps) for pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] port File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 46
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Critical Warning (16562): Review the Power Analyzer report file (<design>.pow.rpt) to ensure your design is within the maximum power utilization limit of the single power-supply target device and to avoid functional failures.
@@ -973,7 +980,8 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (176584): Output pin "CW_1" (external output clock of PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1") uses I/O standard 3.0-V LVTTL, has current strength 12mA, output load 0pF, and output clock frequency of -0 MHz, but target device can support only maximum output clock frequency of 225 MHz for this combination of I/O standard, current strength and load File: D:/Project/Quartus/backscatter/src/top.v Line: 61
+Critical Warning (176584): Output pin "CW_1" (external output clock of PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1") uses I/O standard 3.0-V LVTTL, has current strength 12mA, output load 0pF, and output clock frequency of -0 MHz, but target device can support only maximum output clock frequency of 225 MHz for this combination of I/O standard, current strength and load File: D:/Project/lab-FPGA/Quartus/backscatter/src/top.v Line: 66
+Critical Warning (176584): Output pin "CW_11" (external output clock of PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1") uses I/O standard 3.0-V LVTTL, has current strength 12mA, output load 0pF, and output clock frequency of -0 MHz, but target device can support only maximum output clock frequency of 225 MHz for this combination of I/O standard, current strength and load File: D:/Project/lab-FPGA/Quartus/backscatter/src/top.v Line: 66
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'backscatter.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
@@ -981,17 +989,18 @@ Info (332096): The command derive_clocks did not find any clocks to derive.  No 
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 81
+Info (176353): Automatically promoted node pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C2 of PLL_1) File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 81
+Info (176353): Automatically promoted node pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C2 of PLL_1) File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] (placed in counter C4 of PLL_1) File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 81
+Info (176353): Automatically promoted node pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[2] (placed in counter C4 of PLL_1) File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Warning (15064): PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" output port clk[1] feeds output pin "CW_1~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: D:/Project/Quartus/backscatter/db/pll_altpll.v Line: 46
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Warning (15064): PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" output port clk[1] feeds output pin "CW_11~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 46
+Warning (15064): PLL "pll:the_pll|altpll:altpll_component|pll_altpll:auto_generated|pll1" output port clk[1] feeds output pin "CW_1~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: D:/Project/lab-FPGA/Quartus/backscatter/db/pll_altpll.v Line: 46
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1011,17 +1020,17 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file D:/Project/Quartus/backscatter/output_files/backscatter.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
+Info (144001): Generated suppressed messages file D:/Project/lab-FPGA/Quartus/backscatter/output_files/backscatter.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 5547 megabytes
-    Info: Processing ended: Fri Nov 06 20:38:54 2020
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Thu Nov 12 22:24:55 2020
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Project/Quartus/backscatter/output_files/backscatter.fit.smsg.
+The suppressed messages can be found in D:/Project/lab-FPGA/Quartus/backscatter/output_files/backscatter.fit.smsg.
 
 

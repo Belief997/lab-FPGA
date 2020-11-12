@@ -207,17 +207,17 @@ RESERVED_INPUT               : P8        :        :                   :         
 RESERVED_INPUT               : P9        :        :                   :         : 3         :                
 VCCIO3                       : P10       : power  :                   : 3.0V    : 3         :                
 VCCIO3                       : P11       : power  :                   : 3.0V    : 3         :                
-RESERVED_INPUT               : P12       :        :                   :         : 3         :                
+CW_21                        : P12       : output : 3.0-V LVTTL       :         : 3         : Y              
 VCCA4                        : P13       : power  :                   : 3.0V/3.3V :           :                
 RESERVED_INPUT               : P14       :        :                   :         : 3         :                
-CW_2                         : P15       : output : 3.0-V LVTTL       :         : 3         : Y              
+CW_11                        : P15       : output : 3.0-V LVTTL       :         : 3         : Y              
 GND                          : R1        : gnd    :                   :         :           :                
 RESERVED_INPUT               : R2        :        :                   :         : 2         :                
 RESERVED_INPUT               : R3        :        :                   :         : 3         :                
 RESERVED_INPUT               : R5        :        :                   :         : 3         :                
 RESERVED_INPUT               : R7        :        :                   :         : 3         :                
 RESERVED_INPUT               : R9        :        :                   :         : 3         :                
-RESERVED_INPUT               : R11       :        :                   :         : 3         :                
+CW_2                         : R11       : output : 3.0-V LVTTL       :         : 3         : Y              
 RESERVED_INPUT               : R13       :        :                   :         : 3         :                
 CW_1                         : R14       : output : 3.0-V LVTTL       :         : 3         : Y              
 GND                          : R15       : gnd    :                   :         :           :                

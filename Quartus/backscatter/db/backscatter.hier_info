@@ -31,6 +31,8 @@ led1 << clk_div.DB_MAX_OUTPUT_PORT_TYPE
 led2 << clk_div.DB_MAX_OUTPUT_PORT_TYPE
 CW_1 << pll:the_pll.c1
 CW_2 << CW_2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CW_11 << pll:the_pll.c1
+CW_21 << CW_2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|pll:the_pll

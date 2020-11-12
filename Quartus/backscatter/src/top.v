@@ -5,7 +5,9 @@ module top
 	output led1, //led1 output 
 	output led2, //led2 output 
 	output CW_1, // 1953.125
-	output reg CW_2 // 976.5625
+	output reg CW_2, // 976.5625
+	output CW_11,
+	output CW_21
 ); 
 wire clk_12M;
 wire clk_1;
@@ -14,6 +16,9 @@ wire clk_2;
 
 // freq shift
 assign CW_1 = clk_1;
+assign CW_11 = CW_1;
+assign CW_21 = CW_2;
+
 
 initial CW_2 = 'b0;
 always@(posedge clk_2 or negedge rst_n_in)begin

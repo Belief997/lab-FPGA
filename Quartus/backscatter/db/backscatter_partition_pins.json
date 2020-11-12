@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "CW_21",
+					"strict" : false
+				},
+				{
 					"name" : "rst_n_in",
 					"strict" : false
 				}

@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Nov 06 20:38:54 2020
+Fitter Status : Successful - Thu Nov 12 22:24:55 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : backscatter
 Top-level Entity Name : top
@@ -9,7 +9,7 @@ Total logic elements : 52 / 2,304 ( 2 % )
     Total combinational functions : 52 / 2,304 ( 2 % )
     Dedicated logic registers : 27 / 2,304 ( 1 % )
 Total registers : 27
-Total pins : 6 / 112 ( 5 % )
+Total pins : 8 / 112 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 0 / 110,592 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
