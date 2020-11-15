@@ -1,5 +1,5 @@
 Timing Analyzer report for backscatter
-Thu Nov 12 22:25:06 2020
+Sun Nov 15 15:57:55 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -92,12 +92,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.5%      ;
+;     Processor 2            ;   2.3%      ;
+;     Processors 3-4         ;   2.2%      ;
 +----------------------------+-------------+
 
 
@@ -118,7 +119,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------+-----------------+-----------------------------------------------------+------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name                                          ; Note                                           ;
 +-------------+-----------------+-----------------------------------------------------+------------------------------------------------+
-; 210.13 MHz  ; 210.13 MHz      ; the_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
+; 123.14 MHz  ; 123.14 MHz      ; the_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
 ; 5524.86 MHz ; 402.09 MHz      ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; limit due to minimum period restriction (tmin) ;
 +-------------+-----------------+-----------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
@@ -129,7 +130,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+------------+---------------+
 ; Clock                                               ; Slack      ; End Point TNS ;
 +-----------------------------------------------------+------------+---------------+
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 78.574     ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 75.212     ; 0.000         ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 511997.771 ; 0.000         ;
 +-----------------------------------------------------+------------+---------------+
 
@@ -139,8 +140,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+-------+---------------+
 ; Clock                                               ; Slack ; End Point TNS ;
 +-----------------------------------------------------+-------+---------------+
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 1.024 ; 0.000         ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 1.040 ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 1.135 ; 0.000         ;
 +-----------------------------------------------------+-------+---------------+
 
 
@@ -162,8 +163,8 @@ No paths to report.
 ; Clock                                               ; Slack      ; End Point TNS ;
 +-----------------------------------------------------+------------+---------------+
 ; clk_in                                              ; 41.567     ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 42.007     ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 255999.311 ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 41.998     ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 255999.310 ; 0.000         ;
 +-----------------------------------------------------+------------+---------------+
 
 
@@ -178,7 +179,7 @@ No synchronizer chains to report.
 +-------------+-----------------+-----------------------------------------------------+------------------------------------------------+
 ; Fmax        ; Restricted Fmax ; Clock Name                                          ; Note                                           ;
 +-------------+-----------------+-----------------------------------------------------+------------------------------------------------+
-; 214.5 MHz   ; 214.5 MHz       ; the_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
+; 126.14 MHz  ; 126.14 MHz      ; the_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
 ; 5494.51 MHz ; 402.09 MHz      ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; limit due to minimum period restriction (tmin) ;
 +-------------+-----------------+-----------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
@@ -189,7 +190,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+------------+---------------+
 ; Clock                                               ; Slack      ; End Point TNS ;
 +-----------------------------------------------------+------------+---------------+
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 78.671     ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 75.405     ; 0.000         ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 511997.770 ; 0.000         ;
 +-----------------------------------------------------+------------+---------------+
 
@@ -199,8 +200,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+-------+---------------+
 ; Clock                                               ; Slack ; End Point TNS ;
 +-----------------------------------------------------+-------+---------------+
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.908 ; 0.000         ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 0.922 ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 1.033 ; 0.000         ;
 +-----------------------------------------------------+-------+---------------+
 
 
@@ -222,8 +223,8 @@ No paths to report.
 ; Clock                                               ; Slack      ; End Point TNS ;
 +-----------------------------------------------------+------------+---------------+
 ; clk_in                                              ; 41.587     ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 41.941     ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 255999.244 ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 41.932     ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 255999.243 ; 0.000         ;
 +-----------------------------------------------------+------------+---------------+
 
 
@@ -238,7 +239,7 @@ No synchronizer chains to report.
 +-----------------------------------------------------+------------+---------------+
 ; Clock                                               ; Slack      ; End Point TNS ;
 +-----------------------------------------------------+------------+---------------+
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 81.526     ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 80.002     ; 0.000         ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 511997.939 ; 0.000         ;
 +-----------------------------------------------------+------------+---------------+
 
@@ -248,8 +249,8 @@ No synchronizer chains to report.
 +-----------------------------------------------------+-------+---------------+
 ; Clock                                               ; Slack ; End Point TNS ;
 +-----------------------------------------------------+-------+---------------+
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.530 ; 0.000         ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 0.533 ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.548 ; 0.000         ;
 +-----------------------------------------------------+-------+---------------+
 
 
@@ -271,8 +272,8 @@ No paths to report.
 ; Clock                                               ; Slack      ; End Point TNS ;
 +-----------------------------------------------------+------------+---------------+
 ; clk_in                                              ; 41.243     ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 41.790     ; 0.000         ;
-; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 255999.098 ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 41.787     ; 0.000         ;
+; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 255999.097 ; 0.000         ;
 +-----------------------------------------------------+------------+---------------+
 
 
@@ -287,10 +288,10 @@ No synchronizer chains to report.
 +------------------------------------------------------+------------+-------+----------+---------+---------------------+
 ; Clock                                                ; Setup      ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------------------------------------------+------------+-------+----------+---------+---------------------+
-; Worst-case Slack                                     ; 78.574     ; 0.533 ; N/A      ; N/A     ; 41.243              ;
+; Worst-case Slack                                     ; 75.212     ; 0.530 ; N/A      ; N/A     ; 41.243              ;
 ;  clk_in                                              ; N/A        ; N/A   ; N/A      ; N/A     ; 41.243              ;
-;  the_pll|altpll_component|auto_generated|pll1|clk[0] ; 78.574     ; 0.548 ; N/A      ; N/A     ; 41.790              ;
-;  the_pll|altpll_component|auto_generated|pll1|clk[2] ; 511997.770 ; 0.533 ; N/A      ; N/A     ; 255999.098          ;
+;  the_pll|altpll_component|auto_generated|pll1|clk[0] ; 75.212     ; 0.530 ; N/A      ; N/A     ; 41.787              ;
+;  the_pll|altpll_component|auto_generated|pll1|clk[2] ; 511997.770 ; 0.533 ; N/A      ; N/A     ; 255999.097          ;
 ; Design-wide TNS                                      ; 0.0        ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  clk_in                                              ; N/A        ; N/A   ; N/A      ; N/A     ; 0.000               ;
 ;  the_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.000      ; 0.000 ; N/A      ; N/A     ; 0.000               ;
@@ -309,6 +310,7 @@ No synchronizer chains to report.
 ; CW_2         ; 3.0-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CW_11        ; 3.0-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CW_21        ; 3.0-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SW_TEST      ; 3.0-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_TDO~ ; 3.0-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
@@ -340,6 +342,7 @@ No synchronizer chains to report.
 ; CW_2         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 9.04e-09 V                   ; 2.81 V              ; -0.00621 V          ; 0.27 V                               ; 0.221 V                              ; 4.12e-09 s                  ; 3.82e-09 s                  ; No                         ; Yes                        ; 2.8 V                       ; 9.04e-09 V                  ; 2.81 V             ; -0.00621 V         ; 0.27 V                              ; 0.221 V                             ; 4.12e-09 s                 ; 3.82e-09 s                 ; No                        ; Yes                       ;
 ; CW_11        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 9.03e-09 V                   ; 2.89 V              ; -0.108 V            ; 0.204 V                              ; 0.242 V                              ; 4.59e-10 s                  ; 4.62e-10 s                  ; No                         ; Yes                        ; 2.8 V                       ; 9.03e-09 V                  ; 2.89 V             ; -0.108 V           ; 0.204 V                             ; 0.242 V                             ; 4.59e-10 s                 ; 4.62e-10 s                 ; No                        ; Yes                       ;
 ; CW_21        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 9.04e-09 V                   ; 2.9 V               ; -0.119 V            ; 0.172 V                              ; 0.202 V                              ; 4.43e-10 s                  ; 4.47e-10 s                  ; No                         ; No                         ; 2.8 V                       ; 9.04e-09 V                  ; 2.9 V              ; -0.119 V           ; 0.172 V                             ; 0.202 V                             ; 4.43e-10 s                 ; 4.47e-10 s                 ; No                        ; No                        ;
+; SW_TEST      ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 9.04e-09 V                   ; 2.9 V               ; -0.119 V            ; 0.173 V                              ; 0.204 V                              ; 4.42e-10 s                  ; 4.48e-10 s                  ; No                         ; No                         ; 2.8 V                       ; 9.04e-09 V                  ; 2.9 V              ; -0.119 V           ; 0.173 V                             ; 0.204 V                             ; 4.42e-10 s                 ; 4.48e-10 s                 ; No                        ; No                        ;
 ; ~ALTERA_TDO~ ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 1.3e-08 V                    ; 2.88 V              ; -0.0984 V           ; 0.214 V                              ; 0.371 V                              ; 4.58e-10 s                  ; 4.9e-10 s                   ; No                         ; No                         ; 2.8 V                       ; 1.3e-08 V                   ; 2.88 V             ; -0.0984 V          ; 0.214 V                             ; 0.371 V                             ; 4.58e-10 s                 ; 4.9e-10 s                  ; No                        ; No                        ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -355,6 +358,7 @@ No synchronizer chains to report.
 ; CW_2         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 7.3e-07 V                    ; 2.8 V               ; -0.00298 V          ; 0.279 V                              ; 0.148 V                              ; 4.88e-09 s                  ; 4.66e-09 s                  ; No                         ; Yes                        ; 2.8 V                       ; 7.3e-07 V                   ; 2.8 V              ; -0.00298 V         ; 0.279 V                             ; 0.148 V                             ; 4.88e-09 s                 ; 4.66e-09 s                 ; No                        ; Yes                       ;
 ; CW_11        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 7.3e-07 V                    ; 2.86 V              ; -0.0603 V           ; 0.265 V                              ; 0.139 V                              ; 4.93e-10 s                  ; 6.17e-10 s                  ; Yes                        ; No                         ; 2.8 V                       ; 7.3e-07 V                   ; 2.86 V             ; -0.0603 V          ; 0.265 V                             ; 0.139 V                             ; 4.93e-10 s                 ; 6.17e-10 s                 ; Yes                       ; No                        ;
 ; CW_21        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 7.3e-07 V                    ; 2.86 V              ; -0.0661 V           ; 0.202 V                              ; 0.264 V                              ; 4.66e-10 s                  ; 4.77e-10 s                  ; Yes                        ; Yes                        ; 2.8 V                       ; 7.3e-07 V                   ; 2.86 V             ; -0.0661 V          ; 0.202 V                             ; 0.264 V                             ; 4.66e-10 s                 ; 4.77e-10 s                 ; Yes                       ; Yes                       ;
+; SW_TEST      ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 7.3e-07 V                    ; 2.87 V              ; -0.066 V            ; 0.203 V                              ; 0.266 V                              ; 4.66e-10 s                  ; 4.77e-10 s                  ; Yes                        ; Yes                        ; 2.8 V                       ; 7.3e-07 V                   ; 2.87 V             ; -0.066 V           ; 0.203 V                             ; 0.266 V                             ; 4.66e-10 s                 ; 4.77e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_TDO~ ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 2.8 V                        ; 1.06e-06 V                   ; 2.85 V              ; -0.0482 V           ; 0.296 V                              ; 0.236 V                              ; 5.05e-10 s                  ; 6.44e-10 s                  ; No                         ; Yes                        ; 2.8 V                       ; 1.06e-06 V                  ; 2.85 V             ; -0.0482 V          ; 0.296 V                             ; 0.236 V                             ; 5.05e-10 s                 ; 6.44e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -370,6 +374,7 @@ No synchronizer chains to report.
 ; CW_2         ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; 2.28e-07 V                   ; 3.17 V              ; -0.00789 V          ; 0.271 V                              ; 0.163 V                              ; 3.32e-09 s                  ; 3.08e-09 s                  ; No                         ; Yes                        ; 3.15 V                      ; 2.28e-07 V                  ; 3.17 V             ; -0.00789 V         ; 0.271 V                             ; 0.163 V                             ; 3.32e-09 s                 ; 3.08e-09 s                 ; No                        ; Yes                       ;
 ; CW_11        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; 2.28e-07 V                   ; 3.32 V              ; -0.0161 V           ; 0.363 V                              ; 0.04 V                               ; 2.83e-10 s                  ; 3.4e-10 s                   ; No                         ; Yes                        ; 3.15 V                      ; 2.28e-07 V                  ; 3.32 V             ; -0.0161 V          ; 0.363 V                             ; 0.04 V                              ; 2.83e-10 s                 ; 3.4e-10 s                  ; No                        ; Yes                       ;
 ; CW_21        ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; 2.28e-07 V                   ; 3.33 V              ; -0.0188 V           ; 0.313 V                              ; 0.033 V                              ; 2.69e-10 s                  ; 2.95e-10 s                  ; No                         ; Yes                        ; 3.15 V                      ; 2.28e-07 V                  ; 3.33 V             ; -0.0188 V          ; 0.313 V                             ; 0.033 V                             ; 2.69e-10 s                 ; 2.95e-10 s                 ; No                        ; Yes                       ;
+; SW_TEST      ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; 2.28e-07 V                   ; 3.33 V              ; -0.0186 V           ; 0.313 V                              ; 0.033 V                              ; 2.69e-10 s                  ; 2.95e-10 s                  ; No                         ; Yes                        ; 3.15 V                      ; 2.28e-07 V                  ; 3.33 V             ; -0.0186 V          ; 0.313 V                             ; 0.033 V                             ; 2.69e-10 s                 ; 2.95e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_TDO~ ; 3.0-V LVTTL  ; 0 s                 ; 0 s                 ; 3.15 V                       ; 3.32e-07 V                   ; 3.3 V               ; -0.0288 V           ; 0.373 V                              ; 0.089 V                              ; 2.85e-10 s                  ; 4.1e-10 s                   ; No                         ; Yes                        ; 3.15 V                      ; 3.32e-07 V                  ; 3.3 V              ; -0.0288 V          ; 0.373 V                             ; 0.089 V                             ; 2.85e-10 s                 ; 4.1e-10 s                  ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -379,7 +384,7 @@ No synchronizer chains to report.
 +-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 594      ; 0        ; 0        ; 0        ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 1472     ; 0        ; 0        ; 0        ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 1        ; 0        ; 0        ; 0        ;
 +-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -390,7 +395,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
-; the_pll|altpll_component|auto_generated|pll1|clk[0] ; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 594      ; 0        ; 0        ; 0        ;
+; the_pll|altpll_component|auto_generated|pll1|clk[0] ; the_pll|altpll_component|auto_generated|pll1|clk[0] ; 1472     ; 0        ; 0        ; 0        ;
 ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; the_pll|altpll_component|auto_generated|pll1|clk[2] ; 1        ; 0        ; 0        ; 0        ;
 +-----------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -416,9 +421,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 27    ; 27   ;
-; Unconstrained Output Ports      ; 6     ; 6    ;
-; Unconstrained Output Port Paths ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 58    ; 58   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 7     ; 7    ;
 +---------------------------------+-------+------+
 
 
@@ -452,6 +457,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; CW_2        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; CW_11       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; CW_21       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW_TEST     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; led1        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; led2        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -475,6 +481,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; CW_2        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; CW_11       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; CW_21       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW_TEST     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; led1        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; led2        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -486,7 +493,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 12 22:25:03 2020
+    Info: Processing started: Sun Nov 15 15:57:53 2020
 Info: Command: quartus_sta backscatter -c backscatter
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -507,72 +514,72 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332146): Worst-case setup slack is 78.574
+Info (332146): Worst-case setup slack is 75.212
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    78.574               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    75.212               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119): 511997.771               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
-Info (332146): Worst-case hold slack is 1.040
+Info (332146): Worst-case hold slack is 1.024
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     1.024               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     1.040               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     1.135               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 41.567
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    41.567               0.000 clk_in 
-    Info (332119):    42.007               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119): 255999.311               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
+    Info (332119):    41.998               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119): 255999.310               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 78.671
+Info (332146): Worst-case setup slack is 75.405
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    78.671               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    75.405               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119): 511997.770               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
-Info (332146): Worst-case hold slack is 0.922
+Info (332146): Worst-case hold slack is 0.908
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.908               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.922               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     1.033               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 41.587
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    41.587               0.000 clk_in 
-    Info (332119):    41.941               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119): 255999.244               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
+    Info (332119):    41.932               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119): 255999.243               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 81.526
+Info (332146): Worst-case setup slack is 80.002
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    81.526               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    80.002               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119): 511997.939               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
-Info (332146): Worst-case hold slack is 0.533
+Info (332146): Worst-case hold slack is 0.530
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.530               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.533               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
-    Info (332119):     0.548               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 41.243
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    41.243               0.000 clk_in 
-    Info (332119):    41.790               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119): 255999.098               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
+    Info (332119):    41.787               0.000 the_pll|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119): 255999.097               0.000 the_pll|altpll_component|auto_generated|pll1|clk[2] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Thu Nov 12 22:25:06 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Sun Nov 15 15:57:55 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

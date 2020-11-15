@@ -20,6 +20,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SW_TEST",
+					"strict" : false
+				},
+				{
 					"name" : "rst_n_in",
 					"strict" : false
 				}

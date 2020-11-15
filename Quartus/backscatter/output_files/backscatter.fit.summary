@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Nov 12 22:24:55 2020
+Fitter Status : Successful - Sun Nov 15 15:57:45 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : backscatter
 Top-level Entity Name : top
 Family : MAX 10
 Device : 10M02SCM153C8G
 Timing Models : Final
-Total logic elements : 52 / 2,304 ( 2 % )
-    Total combinational functions : 52 / 2,304 ( 2 % )
-    Dedicated logic registers : 27 / 2,304 ( 1 % )
-Total registers : 27
-Total pins : 8 / 112 ( 7 % )
+Total logic elements : 104 / 2,304 ( 5 % )
+    Total combinational functions : 104 / 2,304 ( 5 % )
+    Dedicated logic registers : 58 / 2,304 ( 3 % )
+Total registers : 58
+Total pins : 9 / 112 ( 8 % )
 Total virtual pins : 0
 Total memory bits : 0 / 110,592 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )

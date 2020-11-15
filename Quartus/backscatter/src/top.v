@@ -1,13 +1,14 @@
 module top
 (
-	input clk_in, //clk_in = 12mhz 
+	input clk_in, //clk_in = 12 MHz 
 	input rst_n_in, //rst_n_in, active low 
 	output led1, //led1 output 
 	output led2, //led2 output 
 	output CW_1, // 1953.125
 	output reg CW_2, // 976.5625
 	output CW_11,
-	output CW_21
+	output CW_21,
+	output reg SW_TEST // 0.5 Hz
 ); 
 wire clk_12M;
 wire clk_1;
@@ -30,6 +31,7 @@ always@(posedge clk_2 or negedge rst_n_in)begin
 	end
 
 end
+
 
 
 // demo
@@ -56,6 +58,30 @@ always@(posedge clk_12M or negedge rst_n_in) begin
 			clk_div <= 1'b1; 
 	end 
 end
+
+// Switch
+reg [31:0] sw_cnt;
+initial begin 
+	sw_cnt = 'b0;
+	SW_TEST = 'b0;
+end
+always@(posedge clk_12M or negedge rst_n_in) begin 
+	if(!rst_n_in) begin 
+		sw_cnt<=0; 
+	end 
+	else begin 
+		if(sw_cnt==(CLK_DIV_PERIOD-1)) 
+			sw_cnt <= 0; 
+		else 
+			sw_cnt <= sw_cnt + 1'b1; 
+			
+		if(sw_cnt==(CLK_DIV_PERIOD - 1)) 
+			SW_TEST <= !SW_TEST; 
+		else 
+			SW_TEST <= SW_TEST; 
+	end 
+end
+
 
 
 pll the_pll(

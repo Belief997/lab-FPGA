@@ -88,7 +88,7 @@ RESERVED_INPUT               : B7        :        :                   :         
 RESERVED_INPUT               : B8        :        :                   :         : 8         :                
 VCCIO8                       : B9        : power  :                   : 3.0V    : 8         :                
 VCCIO8                       : B10       : power  :                   : 3.0V    : 8         :                
-RESERVED_INPUT               : B11       :        :                   :         : 8         :                
+SW_TEST                      : B11       : output : 3.0-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT               : B12       :        :                   :         : 8         :                
 RESERVED_INPUT               : B13       :        :                   :         : 8         :                
 RESERVED_INPUT               : B14       :        :                   :         : 8         :                
