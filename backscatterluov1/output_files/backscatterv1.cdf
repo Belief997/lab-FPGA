@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M02SCM153) Path("E:/LAB/fileRec/backscatterluov1/output_files/") File("backscatterv1.pof") MfrSpec(OpMask(3) Child_OpMask(2 3 3));
+		Device PartName(10M02SCM153) Path("D:/Project/lab-FPGA/backscatterluov1/output_files/") File("backscatterv1.pof") MfrSpec(OpMask(3) Child_OpMask(2 3 3));
 
 ChainEnd;
 

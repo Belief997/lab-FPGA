@@ -1,5 +1,5 @@
 Analysis & Synthesis report for backscatterv1
-Mon Aug 10 16:19:35 2020
+Thu Jan 21 14:58:51 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -19,17 +19,15 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  11. Inverted Register Statistics
  12. Source assignments for sld_signaltap:auto_signaltap_0
  13. Parameter Settings for User Entity Instance: ppl:m1|altpll:altpll_component
- 14. Parameter Settings for User Entity Instance: process:the_proc
- 15. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 16. altpll Parameter Settings by Entity Instance
- 17. Port Connectivity Checks: "process:the_proc"
- 18. Port Connectivity Checks: "ppl:m1"
- 19. Signal Tap Logic Analyzer Settings
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Connections to In-System Debugging Instance "auto_signaltap_0"
- 23. Analysis & Synthesis Messages
- 24. Analysis & Synthesis Suppressed Messages
+ 14. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 15. altpll Parameter Settings by Entity Instance
+ 16. Port Connectivity Checks: "ppl:m1"
+ 17. Signal Tap Logic Analyzer Settings
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -56,15 +54,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 10 16:19:35 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 21 14:58:51 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; backscatterv1                               ;
 ; Top-level Entity Name              ; backscatterv1                               ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 782                                         ;
-;     Total combinational functions  ; 585                                         ;
-;     Dedicated logic registers      ; 569                                         ;
-; Total registers                    ; 569                                         ;
+; Total logic elements               ; 670                                         ;
+;     Total combinational functions  ; 480                                         ;
+;     Dedicated logic registers      ; 484                                         ;
+; Total registers                    ; 484                                         ;
 ; Total pins                         ; 9                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
@@ -166,88 +164,86 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                           ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                 ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------------+
-; process.v                                                          ; yes             ; User Verilog HDL File                        ; E:/Project/FPGA/lab-FPGA/backscatterluov1/process.v                                                          ;             ;
-; backscatterv1.v                                                    ; yes             ; User Verilog HDL File                        ; E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v                                                    ;             ;
-; ppl.v                                                              ; yes             ; User Wizard-Generated File                   ; E:/Project/FPGA/lab-FPGA/backscatterluov1/ppl.v                                                              ;             ;
-; altpll.tdf                                                         ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altpll.tdf                                         ;             ;
-; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/aglobal201.inc                                     ;             ;
-; stratix_pll.inc                                                    ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/stratix_pll.inc                                    ;             ;
-; stratixii_pll.inc                                                  ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/stratixii_pll.inc                                  ;             ;
-; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/cycloneii_pll.inc                                  ;             ;
-; db/ppl_altpll.v                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ppl_altpll.v                                                    ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_signaltap.vhd                                  ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                             ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_ela_control.vhd                                ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_shiftreg.tdf                                   ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_constant.inc                                   ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/dffeea.inc                                         ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_mbpmg.vhd                                      ;             ;
-; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                       ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_buffer_manager.vhd                             ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altsyncram.tdf                                     ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/stratix_ram_block.inc                              ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_mux.inc                                        ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_decode.inc                                     ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/a_rdenreg.inc                                      ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altrom.inc                                         ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altram.inc                                         ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altdpram.inc                                       ;             ;
-; db/altsyncram_gi14.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/altsyncram_gi14.tdf                                             ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altdpram.tdf                                       ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/others/maxplus2/memmodes.inc                                     ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/a_hdffe.inc                                        ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altsyncram.inc                                     ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_mux.tdf                                        ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/muxlut.inc                                         ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/bypassff.inc                                       ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/altshift.inc                                       ;             ;
-; db/mux_h7c.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/mux_h7c.tdf                                                     ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_decode.tdf                                     ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/declut.inc                                         ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_compare.inc                                    ;             ;
-; db/decode_3af.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/decode_3af.tdf                                                  ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_counter.tdf                                    ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_add_sub.inc                                    ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/cmpconst.inc                                       ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/lpm_counter.inc                                    ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; f:/other_software/quartus/quartus/libraries/megafunctions/alt_counter_stratix.inc                            ;             ;
-; db/cntr_gph.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_gph.tdf                                                    ;             ;
-; db/cntr_6ki.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_6ki.tdf                                                    ;             ;
-; db/cntr_4rh.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_4rh.tdf                                                    ;             ;
-; db/cmpr_hrb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cmpr_hrb.tdf                                                    ;             ;
-; db/cntr_odi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_odi.tdf                                                    ;             ;
-; db/cmpr_drb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cmpr_drb.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_rom_sr.vhd                                     ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                      ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                  ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_hub.vhd                                        ; altera_sld  ;
-; db/ip/sld120815cb/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; f:/other_software/quartus/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                   ;             ;
-; output_files/process.v                                             ; yes             ; User Verilog HDL File                        ; E:/Project/FPGA/lab-FPGA/backscatterluov1/output_files/process.v                                             ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                      ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                            ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------+-------------+
+; backscatterv1.v                                                    ; yes             ; User Verilog HDL File                        ; D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v                                                    ;             ;
+; ppl.v                                                              ; yes             ; User Wizard-Generated File                   ; D:/Project/lab-FPGA/backscatterluov1/ppl.v                                                              ;             ;
+; altpll.tdf                                                         ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altpll.tdf                            ;             ;
+; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/aglobal201.inc                        ;             ;
+; stratix_pll.inc                                                    ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/stratix_pll.inc                       ;             ;
+; stratixii_pll.inc                                                  ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/stratixii_pll.inc                     ;             ;
+; cycloneii_pll.inc                                                  ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                     ;             ;
+; db/ppl_altpll.v                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v                                                    ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_signaltap.vhd                     ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_ela_control.vhd                   ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                      ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_constant.inc                      ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/dffeea.inc                            ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                         ;             ;
+; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd          ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd                ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altsyncram.tdf                        ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                 ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_mux.inc                           ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_decode.inc                        ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/a_rdenreg.inc                         ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altrom.inc                            ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altram.inc                            ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altdpram.inc                          ;             ;
+; db/altsyncram_gi14.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/altsyncram_gi14.tdf                                             ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altdpram.tdf                          ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/others/maxplus2/memmodes.inc                        ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/a_hdffe.inc                           ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                   ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altsyncram.inc                        ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_mux.tdf                           ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/muxlut.inc                            ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/bypassff.inc                          ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altshift.inc                          ;             ;
+; db/mux_h7c.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/mux_h7c.tdf                                                     ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_decode.tdf                        ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/declut.inc                            ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_compare.inc                       ;             ;
+; db/decode_3af.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/decode_3af.tdf                                                  ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_counter.tdf                       ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                       ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/cmpconst.inc                          ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/lpm_counter.inc                       ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc               ;             ;
+; db/cntr_gph.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/cntr_gph.tdf                                                    ;             ;
+; db/cntr_6ki.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/cntr_6ki.tdf                                                    ;             ;
+; db/cntr_4rh.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/cntr_4rh.tdf                                                    ;             ;
+; db/cmpr_hrb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/cmpr_hrb.tdf                                                    ;             ;
+; db/cntr_odi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/cntr_odi.tdf                                                    ;             ;
+; db/cmpr_drb.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/Project/lab-FPGA/backscatterluov1/db/cmpr_drb.tdf                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                        ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd         ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv     ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_hub.vhd                           ; altera_sld  ;
+; db/ip/sld120815cb/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                      ;             ;
+; output_files/process.v                                             ; yes             ; User Verilog HDL File                        ; D:/Project/lab-FPGA/backscatterluov1/output_files/process.v                                             ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -255,20 +251,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 782                      ;
+; Estimated Total logic elements              ; 670                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 585                      ;
+; Total combinational functions               ; 480                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 199                      ;
-;     -- 3 input functions                    ; 149                      ;
-;     -- <=2 input functions                  ; 237                      ;
+;     -- 4 input functions                    ; 176                      ;
+;     -- 3 input functions                    ; 145                      ;
+;     -- <=2 input functions                  ; 159                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 436                      ;
-;     -- arithmetic mode                      ; 149                      ;
+;     -- normal mode                          ; 393                      ;
+;     -- arithmetic mode                      ; 87                       ;
 ;                                             ;                          ;
-; Total registers                             ; 569                      ;
-;     -- Dedicated logic registers            ; 569                      ;
+; Total registers                             ; 484                      ;
+;     -- Dedicated logic registers            ; 484                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 9                        ;
@@ -281,8 +277,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 336                      ;
-; Total fan-out                               ; 3776                     ;
-; Average fan-out                             ; 3.18                     ;
+; Total fan-out                               ; 3188                     ;
+; Average fan-out                             ; 3.20                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -291,11 +287,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                       ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |backscatterv1                                                                                                                          ; 585 (0)             ; 569 (0)                   ; 8192        ; 0          ; 0            ; 0       ; 0         ; 9    ; 0            ; 0          ; |backscatterv1                                                                                                                                                                                                                                                                                                                                            ; backscatterv1                     ; work         ;
+; |backscatterv1                                                                                                                          ; 480 (1)             ; 484 (0)                   ; 8192        ; 0          ; 0            ; 0       ; 0         ; 9    ; 0            ; 0          ; |backscatterv1                                                                                                                                                                                                                                                                                                                                            ; backscatterv1                     ; work         ;
 ;    |ppl:m1|                                                                                                                             ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|ppl:m1                                                                                                                                                                                                                                                                                                                                     ; ppl                               ; work         ;
 ;       |altpll:altpll_component|                                                                                                         ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|ppl:m1|altpll:altpll_component                                                                                                                                                                                                                                                                                                             ; altpll                            ; work         ;
 ;          |ppl_altpll:auto_generated|                                                                                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated                                                                                                                                                                                                                                                                                   ; ppl_altpll                        ; work         ;
-;    |process:the_proc|                                                                                                                   ; 106 (106)           ; 85 (85)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|process:the_proc                                                                                                                                                                                                                                                                                                                           ; process                           ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 125 (1)             ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 124 (0)             ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 124 (0)             ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |backscatterv1|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -374,12 +369,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 569   ;
-; Number of registers using Synchronous Clear  ; 112   ;
+; Total registers                              ; 484   ;
+; Number of registers using Synchronous Clear  ; 48    ;
 ; Number of registers using Synchronous Load   ; 65    ;
-; Number of registers using Asynchronous Clear ; 265   ;
+; Number of registers using Asynchronous Clear ; 180   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 350   ;
+; Number of registers using Clock Enable       ; 330   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -389,15 +384,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; process:the_proc|data[19]                                                                                                                                                                                                                                                                                                       ; 4       ;
-; process:the_proc|data[17]                                                                                                                                                                                                                                                                                                       ; 1       ;
-; process:the_proc|data[15]                                                                                                                                                                                                                                                                                                       ; 1       ;
-; process:the_proc|data[14]                                                                                                                                                                                                                                                                                                       ; 1       ;
-; process:the_proc|data[13]                                                                                                                                                                                                                                                                                                       ; 1       ;
-; process:the_proc|data[10]                                                                                                                                                                                                                                                                                                       ; 1       ;
-; process:the_proc|data[4]                                                                                                                                                                                                                                                                                                        ; 1       ;
-; process:the_proc|data[2]                                                                                                                                                                                                                                                                                                        ; 1       ;
-; process:the_proc|data[0]                                                                                                                                                                                                                                                                                                        ; 1       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 2       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[1]                                                                                                                                                   ; 1       ;
@@ -412,7 +398,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[10]                                                                                                                                                  ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[11]                                                                                                                                                  ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0]                                                                                                                                                   ; 1       ;
-; Total number of inverted registers = 23                                                                                                                                                                                                                                                                                         ;         ;
+; Total number of inverted registers = 14                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -466,7 +452,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK4_MULTIPLY_BY              ; 1                     ; Untyped             ;
 ; CLK3_MULTIPLY_BY              ; 1                     ; Untyped             ;
 ; CLK2_MULTIPLY_BY              ; 1                     ; Untyped             ;
-; CLK1_MULTIPLY_BY              ; 25                    ; Signed Integer      ;
+; CLK1_MULTIPLY_BY              ; 1                     ; Signed Integer      ;
 ; CLK0_MULTIPLY_BY              ; 1                     ; Signed Integer      ;
 ; CLK9_DIVIDE_BY                ; 0                     ; Untyped             ;
 ; CLK8_DIVIDE_BY                ; 0                     ; Untyped             ;
@@ -476,7 +462,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK4_DIVIDE_BY                ; 1                     ; Untyped             ;
 ; CLK3_DIVIDE_BY                ; 1                     ; Untyped             ;
 ; CLK2_DIVIDE_BY                ; 1                     ; Untyped             ;
-; CLK1_DIVIDE_BY                ; 3                     ; Signed Integer      ;
+; CLK1_DIVIDE_BY                ; 1200                  ; Signed Integer      ;
 ; CLK0_DIVIDE_BY                ; 1                     ; Signed Integer      ;
 ; CLK9_PHASE_SHIFT              ; 0                     ; Untyped             ;
 ; CLK8_PHASE_SHIFT              ; 0                     ; Untyped             ;
@@ -799,16 +785,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: process:the_proc ;
-+----------------+----------------------+-----------------------+
-; Parameter Name ; Value                ; Type                  ;
-+----------------+----------------------+-----------------------+
-; DATA           ; 10101110010000010101 ; Unsigned Binary       ;
-+----------------+----------------------+-----------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                          ;
 +-------------------------------------------------+---------------------------------------+----------------+
@@ -892,24 +868,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+--------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "process:the_proc"                                                                                                                                                               ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; clk  ; Input ; Warning  ; Input port expression (2 bits) is wider than the input port (1 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ppl:m1"                                                                                                                                                                 ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                                                               ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; c0     ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (2 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
-; c0[-1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                   ;
-; c1     ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (2 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ppl:m1"                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; c0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -927,23 +892,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 9                           ;
-; cycloneiii_ff         ; 85                          ;
-;     CLR               ; 1                           ;
-;     CLR SCLR          ; 64                          ;
-;     ENA CLR           ; 20                          ;
-; cycloneiii_lcell_comb ; 107                         ;
-;     arith             ; 62                          ;
-;         2 data inputs ; 62                          ;
-;     normal            ; 45                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 15                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 23                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.92                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -956,53 +911,53 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                       ;
-+----------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-; Name                 ; Type         ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details ;
-+----------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; clk                  ; post-fitting ; connected ; Top                            ; post-synthesis    ; clk                                 ; N/A     ;
-; clkout1              ; post-fitting ; connected ; Top                            ; post-synthesis    ; process:the_proc|data[19]~_wirecell ; N/A     ;
-; clkout1              ; post-fitting ; connected ; Top                            ; post-synthesis    ; process:the_proc|data[19]~_wirecell ; N/A     ;
-; clkout2              ; post-fitting ; connected ; Top                            ; post-synthesis    ; process:the_proc|ctrl1              ; N/A     ;
-; clkout2              ; post-fitting ; connected ; Top                            ; post-synthesis    ; process:the_proc|ctrl1              ; N/A     ;
-; clkout3              ; post-fitting ; connected ; Top                            ; post-synthesis    ; process:the_proc|pwm                ; N/A     ;
-; clkout3              ; post-fitting ; connected ; Top                            ; post-synthesis    ; process:the_proc|pwm                ; N/A     ;
-; rst_n                ; post-fitting ; connected ; Top                            ; post-synthesis    ; rst_n                               ; N/A     ;
-; rst_n                ; post-fitting ; connected ; Top                            ; post-synthesis    ; rst_n                               ; N/A     ;
-+----------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                             ;
++----------------------+--------------+-----------+--------------------------------+-------------------+---------------------------------------------------------------------------+---------+
+; Name                 ; Type         ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                                                         ; Details ;
++----------------------+--------------+-----------+--------------------------------+-------------------+---------------------------------------------------------------------------+---------+
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                                       ; N/A     ;
+; clk                  ; post-fitting ; connected ; Top                            ; post-synthesis    ; clk                                                                       ; N/A     ;
+; clkout1              ; post-fitting ; connected ; Top                            ; post-synthesis    ; ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|wire_pll1_clk[1] ; N/A     ;
+; clkout1              ; post-fitting ; connected ; Top                            ; post-synthesis    ; ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|wire_pll1_clk[1] ; N/A     ;
+; clkout2              ; post-fitting ; connected ; Top                            ; post-synthesis    ; ~GND                                                                      ; N/A     ;
+; clkout2              ; post-fitting ; connected ; Top                            ; post-synthesis    ; ~GND                                                                      ; N/A     ;
+; clkout3              ; post-fitting ; connected ; Top                            ; post-synthesis    ; ~GND                                                                      ; N/A     ;
+; clkout3              ; post-fitting ; connected ; Top                            ; post-synthesis    ; ~GND                                                                      ; N/A     ;
+; rst_n                ; post-fitting ; connected ; Top                            ; post-synthesis    ; rst_n                                                                     ; N/A     ;
+; rst_n                ; post-fitting ; connected ; Top                            ; post-synthesis    ; rst_n                                                                     ; N/A     ;
++----------------------+--------------+-----------+--------------------------------+-------------------+---------------------------------------------------------------------------+---------+
 
 
 +-------------------------------+
@@ -1011,33 +966,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Aug 10 16:18:48 2020
+    Info: Processing started: Thu Jan 21 14:58:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off backscatterv1 -c backscatterv1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file process.v
-    Info (12023): Found entity 1: process File: E:/Project/FPGA/lab-FPGA/backscatterluov1/process.v Line: 6
+    Info (12023): Found entity 1: process File: D:/Project/lab-FPGA/backscatterluov1/process.v Line: 6
 Warning (12019): Can't analyze file -- file keys.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file backscatterv1.v
-    Info (12023): Found entity 1: backscatterv1 File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 1
+    Info (12023): Found entity 1: backscatterv1 File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ppl.v
-    Info (12023): Found entity 1: ppl File: E:/Project/FPGA/lab-FPGA/backscatterluov1/ppl.v Line: 40
+    Info (12023): Found entity 1: ppl File: D:/Project/lab-FPGA/backscatterluov1/ppl.v Line: 40
 Info (12127): Elaborating entity "backscatterv1" for the top level hierarchy
-Warning (10034): Output port "clkout4" at backscatterv1.v(8) has no driver File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
-Warning (10034): Output port "clkp" at backscatterv1.v(8) has no driver File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
-Warning (10034): Output port "led0" at backscatterv1.v(11) has no driver File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 11
-Info (12128): Elaborating entity "ppl" for hierarchy "ppl:m1" File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 23
-Info (12128): Elaborating entity "altpll" for hierarchy "ppl:m1|altpll:altpll_component" File: E:/Project/FPGA/lab-FPGA/backscatterluov1/ppl.v Line: 95
-Info (12130): Elaborated megafunction instantiation "ppl:m1|altpll:altpll_component" File: E:/Project/FPGA/lab-FPGA/backscatterluov1/ppl.v Line: 95
-Info (12133): Instantiated megafunction "ppl:m1|altpll:altpll_component" with the following parameter: File: E:/Project/FPGA/lab-FPGA/backscatterluov1/ppl.v Line: 95
+Warning (10034): Output port "clkout2" at backscatterv1.v(8) has no driver File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+Warning (10034): Output port "clkout3" at backscatterv1.v(8) has no driver File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+Warning (10034): Output port "clkout4" at backscatterv1.v(8) has no driver File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+Warning (10034): Output port "clkp" at backscatterv1.v(8) has no driver File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+Warning (10034): Output port "led0" at backscatterv1.v(11) has no driver File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 11
+Info (12128): Elaborating entity "ppl" for hierarchy "ppl:m1" File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 23
+Info (12128): Elaborating entity "altpll" for hierarchy "ppl:m1|altpll:altpll_component" File: D:/Project/lab-FPGA/backscatterluov1/ppl.v Line: 95
+Info (12130): Elaborated megafunction instantiation "ppl:m1|altpll:altpll_component" File: D:/Project/lab-FPGA/backscatterluov1/ppl.v Line: 95
+Info (12133): Instantiated megafunction "ppl:m1|altpll:altpll_component" with the following parameter: File: D:/Project/lab-FPGA/backscatterluov1/ppl.v Line: 95
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
     Info (12134): Parameter "clk0_phase_shift" = "0"
-    Info (12134): Parameter "clk1_divide_by" = "3"
+    Info (12134): Parameter "clk1_divide_by" = "1200"
     Info (12134): Parameter "clk1_duty_cycle" = "50"
-    Info (12134): Parameter "clk1_multiply_by" = "25"
+    Info (12134): Parameter "clk1_multiply_by" = "1"
     Info (12134): Parameter "clk1_phase_shift" = "0"
     Info (12134): Parameter "compensate_clock" = "CLK0"
     Info (12134): Parameter "inclk0_input_frequency" = "83333"
@@ -1089,32 +1046,29 @@ Info (12133): Instantiated megafunction "ppl:m1|altpll:altpll_component" with th
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/ppl_altpll.v
-    Info (12023): Found entity 1: ppl_altpll File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 30
-Info (12128): Elaborating entity "ppl_altpll" for hierarchy "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated" File: f:/other_software/quartus/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "process" for hierarchy "process:the_proc" File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 30
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk1[1]" is missing source, defaulting to GND File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 14
+    Info (12023): Found entity 1: ppl_altpll File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 30
+Info (12128): Elaborating entity "ppl_altpll" for hierarchy "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated" File: d:/application/intelfpga_lite20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gi14.tdf
-    Info (12023): Found entity 1: altsyncram_gi14 File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/altsyncram_gi14.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_gi14 File: D:/Project/lab-FPGA/backscatterluov1/db/altsyncram_gi14.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_h7c.tdf
-    Info (12023): Found entity 1: mux_h7c File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/mux_h7c.tdf Line: 23
+    Info (12023): Found entity 1: mux_h7c File: D:/Project/lab-FPGA/backscatterluov1/db/mux_h7c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3af.tdf
-    Info (12023): Found entity 1: decode_3af File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/decode_3af.tdf Line: 23
+    Info (12023): Found entity 1: decode_3af File: D:/Project/lab-FPGA/backscatterluov1/db/decode_3af.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_gph.tdf
-    Info (12023): Found entity 1: cntr_gph File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_gph.tdf Line: 26
+    Info (12023): Found entity 1: cntr_gph File: D:/Project/lab-FPGA/backscatterluov1/db/cntr_gph.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_6ki.tdf
-    Info (12023): Found entity 1: cntr_6ki File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_6ki.tdf Line: 26
+    Info (12023): Found entity 1: cntr_6ki File: D:/Project/lab-FPGA/backscatterluov1/db/cntr_6ki.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4rh.tdf
-    Info (12023): Found entity 1: cntr_4rh File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_4rh.tdf Line: 28
+    Info (12023): Found entity 1: cntr_4rh File: D:/Project/lab-FPGA/backscatterluov1/db/cntr_4rh.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_hrb.tdf
-    Info (12023): Found entity 1: cmpr_hrb File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cmpr_hrb.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_hrb File: D:/Project/lab-FPGA/backscatterluov1/db/cmpr_hrb.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_odi.tdf
-    Info (12023): Found entity 1: cntr_odi File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cntr_odi.tdf Line: 28
+    Info (12023): Found entity 1: cntr_odi File: D:/Project/lab-FPGA/backscatterluov1/db/cntr_odi.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_drb.tdf
-    Info (12023): Found entity 1: cmpr_drb File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/cmpr_drb.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_drb File: D:/Project/lab-FPGA/backscatterluov1/db/cmpr_drb.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2020.08.10.16:19:16 Progress: Loading sld120815cb/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2021.01.21.14:58:40 Progress: Loading sld120815cb/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1123,53 +1077,50 @@ Info (11172): Splitter: "alt_sld_fab" instantiated altera_sld_splitter "splitter
 Info (11172): Sldfabric: "alt_sld_fab" instantiated altera_sld_jtag_hub "sldfabric"
 Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification_hub "ident"
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
-Info (11172): Picked up _JAVA_OPTIONS: -Xmx512M
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld120815cb/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: E:/Project/FPGA/lab-FPGA/backscatterluov1/process.v Line: 85
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Project/lab-FPGA/backscatterluov1/db/ip/sld120815cb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "clkout4" is stuck at GND File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
-    Warning (13410): Pin "clkp" is stuck at GND File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
-    Warning (13410): Pin "led0" is stuck at GND File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 11
-Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (144001): Generated suppressed messages file E:/Project/FPGA/lab-FPGA/backscatterluov1/output_files/backscatterv1.map.smsg
+    Warning (13410): Pin "clkout2" is stuck at GND File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+    Warning (13410): Pin "clkout3" is stuck at GND File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+    Warning (13410): Pin "clkout4" is stuck at GND File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+    Warning (13410): Pin "clkp" is stuck at GND File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 8
+    Warning (13410): Pin "led0" is stuck at GND File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 11
+Info (144001): Generated suppressed messages file D:/Project/lab-FPGA/backscatterluov1/output_files/backscatterv1.map.smsg
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 41 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15897): PLL "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|pll1" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
-Warning (15899): PLL "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|pll1" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: E:/Project/FPGA/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
+Warning (15897): PLL "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|pll1" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
+Warning (15899): PLL "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|pll1" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "key0" File: E:/Project/FPGA/lab-FPGA/backscatterluov1/backscatterv1.v Line: 10
-Info (21057): Implemented 820 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "key0" File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 10
+Info (21057): Implemented 707 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 801 logic cells
+    Info (21061): Implemented 688 logic cells
     Info (21064): Implemented 4 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Mon Aug 10 16:19:35 2020
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:00:58
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Thu Jan 21 14:58:51 2021
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:44
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in E:/Project/FPGA/lab-FPGA/backscatterluov1/output_files/backscatterv1.map.smsg.
+The suppressed messages can be found in D:/Project/lab-FPGA/backscatterluov1/output_files/backscatterv1.map.smsg.
 
 

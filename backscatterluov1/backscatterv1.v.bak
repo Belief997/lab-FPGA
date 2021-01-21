@@ -10,11 +10,11 @@ module backscatterv1 (
 		  input key0;
 		  output led0;
 		  
-		  wire clk0; // 12 M
-		  wire clk1; // 10 k
+		  wire[1:0] clk0; // 12	M
+		  wire[1:0] clk1; // 100 M
 //		  wire[1:0] clk2;
 		  
-		  assign clkout1 = clk1; // M4
+		  
 
      ppl m1(.inclk0(clk),
 				.c0(clk0),
@@ -24,9 +24,9 @@ module backscatterv1 (
 				
 				
 		
-//process the_proc(
-//	 .clk(clk1), .rst_n(rst_n), 
-//	 .sig(clkout1), .ctrl1(clkout2), .pwm(clkout3)
-//);    
+process the_proc(
+	 .clk(clk1), .rst_n(rst_n), 
+	 .sig(clkout1), .ctrl1(clkout2), .pwm(clkout3)
+);    
 
 endmodule
