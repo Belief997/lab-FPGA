@@ -1,12 +1,12 @@
-Power Analyzer Status : Successful - Mon Aug 10 16:20:02 2020
+Power Analyzer Status : Successful - Thu Jan 21 17:07:32 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : backscatterv1
 Top-level Entity Name : backscatterv1
 Family : MAX 10
 Device : 10M02SCM153I7G
 Power Models : Final
-Total Thermal Power Dissipation : 126.43 mW
-Core Dynamic Thermal Power Dissipation : 2.26 mW
+Total Thermal Power Dissipation : 126.42 mW
+Core Dynamic Thermal Power Dissipation : 2.25 mW
 Core Static Thermal Power Dissipation : 77.55 mW
 I/O Thermal Power Dissipation : 46.62 mW
 Power Estimation Confidence : Low: user provided insufficient toggle rate data
