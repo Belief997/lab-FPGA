@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
-// DATE "03/10/2022 17:03:02"
+// DATE "03/10/2022 17:11:59"
 
 // 
 // Device: Altera 10M02SCM153I7G Package MBGA153
@@ -1240,9 +1240,9 @@ defparam \m1|altpll_component|auto_generated|pll1 .clk0_duty_cycle = 50;
 defparam \m1|altpll_component|auto_generated|pll1 .clk0_multiply_by = 0;
 defparam \m1|altpll_component|auto_generated|pll1 .clk0_phase_shift = "0";
 defparam \m1|altpll_component|auto_generated|pll1 .clk1_counter = "c0";
-defparam \m1|altpll_component|auto_generated|pll1 .clk1_divide_by = 12;
+defparam \m1|altpll_component|auto_generated|pll1 .clk1_divide_by = 4;
 defparam \m1|altpll_component|auto_generated|pll1 .clk1_duty_cycle = 50;
-defparam \m1|altpll_component|auto_generated|pll1 .clk1_multiply_by = 31;
+defparam \m1|altpll_component|auto_generated|pll1 .clk1_multiply_by = 13;
 defparam \m1|altpll_component|auto_generated|pll1 .clk1_phase_shift = "0";
 defparam \m1|altpll_component|auto_generated|pll1 .clk2_counter = "unused";
 defparam \m1|altpll_component|auto_generated|pll1 .clk2_divide_by = 0;
@@ -1263,8 +1263,8 @@ defparam \m1|altpll_component|auto_generated|pll1 .compensate_clock = "clock1";
 defparam \m1|altpll_component|auto_generated|pll1 .inclk0_input_frequency = 83333;
 defparam \m1|altpll_component|auto_generated|pll1 .inclk1_input_frequency = 0;
 defparam \m1|altpll_component|auto_generated|pll1 .loop_filter_c_bits = 0;
-defparam \m1|altpll_component|auto_generated|pll1 .loop_filter_r_bits = 24;
-defparam \m1|altpll_component|auto_generated|pll1 .m = 31;
+defparam \m1|altpll_component|auto_generated|pll1 .loop_filter_r_bits = 20;
+defparam \m1|altpll_component|auto_generated|pll1 .m = 39;
 defparam \m1|altpll_component|auto_generated|pll1 .m_initial = 1;
 defparam \m1|altpll_component|auto_generated|pll1 .m_ph = 0;
 defparam \m1|altpll_component|auto_generated|pll1 .n = 1;
@@ -1280,7 +1280,7 @@ defparam \m1|altpll_component|auto_generated|pll1 .vco_frequency_control = "auto
 defparam \m1|altpll_component|auto_generated|pll1 .vco_max = 3333;
 defparam \m1|altpll_component|auto_generated|pll1 .vco_min = 1538;
 defparam \m1|altpll_component|auto_generated|pll1 .vco_multiply_by = 0;
-defparam \m1|altpll_component|auto_generated|pll1 .vco_phase_shift_step = 336;
+defparam \m1|altpll_component|auto_generated|pll1 .vco_phase_shift_step = 267;
 defparam \m1|altpll_component|auto_generated|pll1 .vco_post_scale = 2;
 // synopsys translate_on
 
