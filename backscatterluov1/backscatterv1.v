@@ -11,7 +11,7 @@ module backscatterv1 (
 		  output led0;
 		  
 		  wire clk0; // 12 M
-		  wire clk1; // 31 M
+		  wire clk1; // 39 M
 //		  wire[1:0] clk2;
 		  
 		  assign clkout1 = clk1; // M4
