@@ -1,5 +1,5 @@
 Fitter report for backscatterv1
-Thu Mar 10 17:11:50 2022
+Tue Mar 29 21:13:07 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Mar 10 17:11:50 2022       ;
+; Fitter Status                      ; Successful - Tue Mar 29 21:13:07 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; backscatterv1                               ;
 ; Top-level Entity Name              ; backscatterv1                               ;
@@ -158,14 +158,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.19        ;
+; Average used               ; 1.16        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.2%      ;
-;     Processor 3            ;   6.2%      ;
-;     Processor 4            ;   6.2%      ;
+;     Processor 2            ;   5.3%      ;
+;     Processor 3            ;   5.3%      ;
+;     Processor 4            ;   5.3%      ;
 +----------------------------+-------------+
 
 
@@ -574,22 +574,22 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Input frequency 0             ; 12.0 MHz                                                      ;
 ; Input frequency 1             ; --                                                            ;
 ; Nominal PFD frequency         ; 12.0 MHz                                                      ;
-; Nominal VCO frequency         ; 468.0 MHz                                                     ;
+; Nominal VCO frequency         ; 348.0 MHz                                                     ;
 ; VCO post scale K counter      ; 2                                                             ;
 ; VCO frequency control         ; Auto                                                          ;
-; VCO phase shift step          ; 267 ps                                                        ;
+; VCO phase shift step          ; 359 ps                                                        ;
 ; VCO multiply                  ; --                                                            ;
 ; VCO divide                    ; --                                                            ;
-; Freq min lock                 ; 7.69 MHz                                                      ;
-; Freq max lock                 ; 16.67 MHz                                                     ;
+; Freq min lock                 ; 10.35 MHz                                                     ;
+; Freq max lock                 ; 22.42 MHz                                                     ;
 ; M VCO Tap                     ; 0                                                             ;
 ; M Initial                     ; 1                                                             ;
-; M value                       ; 39                                                            ;
+; M value                       ; 29                                                            ;
 ; N value                       ; 1                                                             ;
 ; Charge pump current           ; setting 1                                                     ;
-; Loop filter resistance        ; setting 20                                                    ;
+; Loop filter resistance        ; setting 24                                                    ;
 ; Loop filter capacitance       ; setting 0                                                     ;
-; Bandwidth                     ; 450 kHz to 590 kHz                                            ;
+; Bandwidth                     ; 450 kHz to 980 kHz                                            ;
 ; Bandwidth type                ; Medium                                                        ;
 ; Real time reconfigurable      ; Off                                                           ;
 ; Scan chain MIF file           ; --                                                            ;
@@ -607,7 +607,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+------------------------------------------------+
 ; Name                                                                      ; Output Clock ; Mult ; Div ; Output Frequency ; Phase Shift ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                   ;
 +---------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+------------------------------------------------+
-; ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|wire_pll1_clk[1] ; clock1       ; 13   ; 4   ; 39.0 MHz         ; 0 (0 ps)    ; 3.75 (267 ps)    ; 50/50      ; C0      ; 12            ; 6/6 Even   ; --            ; 1       ; 0       ; m1|altpll_component|auto_generated|pll1|clk[1] ;
+; ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|wire_pll1_clk[1] ; clock1       ; 29   ; 10  ; 34.8 MHz         ; 0 (0 ps)    ; 4.50 (359 ps)    ; 50/50      ; C0      ; 10            ; 5/5 Even   ; --            ; 1       ; 0       ; m1|altpll_component|auto_generated|pll1|clk[1] ;
 +---------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+------------------------------------------------+
 
 
@@ -1111,7 +1111,7 @@ Info (21077): Low junction temperature is -40 degrees C
 Info (21077): High junction temperature is 100 degrees C
 Warning (15564): Compensate clock of PLL "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|pll1" has been set to clock1 File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
 Info (15535): Implemented PLL "ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|pll1" as MAX 10 PLL type File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
-    Info (15099): Implementing clock multiplication of 13, clock division of 4, and phase shift of 0 degrees (0 ps) for ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|wire_pll1_clk[1] port File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
+    Info (15099): Implementing clock multiplication of 29, clock division of 10, and phase shift of 0 degrees (0 ps) for ppl:m1|altpll:altpll_component|ppl_altpll:auto_generated|wire_pll1_clk[1] port File: D:/Project/lab-FPGA/backscatterluov1/db/ppl_altpll.v Line: 44
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Critical Warning (16562): Review the Power Analyzer report file (<design>.pow.rpt) to ensure your design is within the maximum power utilization limit of the single power-supply target device and to avoid functional failures.
@@ -1178,7 +1178,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.21 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1190,10 +1190,10 @@ Warning (169177): 3 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at J5 File: D:/Project/lab-FPGA/backscatterluov1/backscatterv1.v Line: 7
 Info (144001): Generated suppressed messages file D:/Project/lab-FPGA/backscatterluov1/output_files/backscatterv1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 5551 megabytes
-    Info: Processing ended: Thu Mar 10 17:11:50 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 5558 megabytes
+    Info: Processing ended: Tue Mar 29 21:13:07 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+
